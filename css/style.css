@@ -437,3 +437,45 @@ p {
   width: 64px;
   height: 64px;
 }
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.features-icon-box {
+  background-color: var(--color-bg-light);
+  padding: 24px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-icon-box .icon {
+  fill: var(--color-primary);
+  width: 64px;
+  height: 64px;
+}
+
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
