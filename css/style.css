@@ -320,3 +320,45 @@ p {
   text-align: center;
   color: var(--color-dark);
 }
+
+/* Додаємо стилі для SVG-іконок */
+.icon {
+  display: block;
+  margin-bottom: 8px;
+  fill: var(--color-primary);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+  margin-top: 8px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+  fill: var(--color-white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-accent);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--color-white);
+}
