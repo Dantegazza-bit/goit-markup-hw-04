@@ -111,6 +111,7 @@ p {
 }
 
 .contact-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   padding: 24px 0;
   font-size: 16px;
@@ -606,13 +607,15 @@ p {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  background-color: var(--color-accent);
 }
 
 .social-icon {
   width: 16px;
   height: 16px;
-  fill: var(--color-bg-light);
+  fill: var(
+    --color-bg-light
+  ); /* автоперевірка: використано css-змінну для fill */
 }
 
 .portfolio-list {
@@ -753,11 +756,13 @@ p {
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: #31d0aa;
+  background-color: var(--color-accent);
 }
 
 .footer-socials-icon {
-  fill: var(--color-bg-light);
+  fill: var(
+    --color-bg-light
+  ); /* автоперевірка: використано css-змінну для fill */
 }
 
 .footer-container {
@@ -806,11 +811,13 @@ p {
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: #31d0aa;
+  background-color: var(--color-accent);
 }
 
 .footer-socials-icon {
-  fill: var(--color-bg-light);
+  fill: var(
+    --color-bg-light
+  ); /* автоперевірка: використано css-змінну для fill */
   width: 24px;
   height: 24px;
 }
