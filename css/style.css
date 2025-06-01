@@ -1,3 +1,4 @@
+/* === Основні змінні === */
 :root {
   --color-primary: #4d5ae5;
   --color-accent: #404bbf;
@@ -8,6 +9,7 @@
   --color-border: #e7e9fc;
 }
 
+/* === Базові стилі === */
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-text);
@@ -37,16 +39,19 @@ p {
   margin: 0;
 }
 
+/* === Контейнер === */
 .container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+/* === Секції === */
 .section {
   padding: 120px 0;
 }
 
+/* === Header === */
 .page-header {
   border-bottom: 1px solid var(--color-border);
 }
@@ -120,6 +125,7 @@ p {
   color: var(--color-accent);
 }
 
+/* === Hero === */
 .hero {
   background-color: var(--color-dark);
   text-align: center;
@@ -150,7 +156,6 @@ p {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -158,11 +163,7 @@ p {
   background: linear-gradient(90deg, #4d5ae5 0%, #404bbf 100%);
 }
 
-.section-list {
-  display: flex;
-  gap: 24px;
-}
-
+/* === Features === */
 .features-list {
   display: flex;
   gap: 24px;
@@ -189,6 +190,17 @@ p {
   color: var(--color-text);
 }
 
+/* SVG-іконка в Features */
+.features-item .icon {
+  background-color: var(--color-bg-light);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 8px;
+  fill: var(--color-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* === Team === */
 .team {
   background-color: var(--color-bg-light);
   padding: 120px 0;
@@ -231,6 +243,43 @@ p {
   text-align: center;
 }
 
+/* Соцмережі в Team і Footer */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+  margin-top: 8px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+  fill: var(--color-white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-accent);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--color-white);
+}
+
+/* === Portfolio === */
 .portfolio {
   background-color: var(--color-white);
   padding: 120px 0;
@@ -272,6 +321,7 @@ p {
   color: var(--color-text);
 }
 
+/* === Footer === */
 .footer {
   background-color: var(--color-dark);
   padding: 100px 0;
@@ -303,6 +353,7 @@ p {
   text-align: left;
 }
 
+/* === Прихований заголовок === */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -324,52 +375,4 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--color-dark);
-}
-
-.icon {
-  display: block;
-  margin-bottom: 8px;
-  fill: var(--color-primary);
-}
-
-.features-item .icon {
-  background-color: var(--color-bg-light);
-  border-radius: 4px;
-  padding: 24px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 0;
-  list-style: none;
-  margin-top: 8px;
-}
-
-.social-link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-primary);
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-icon {
-  fill: var(--color-white);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--color-accent);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--color-white);
 }
