@@ -837,3 +837,8 @@ p {
 .features-svg {
   fill: #4d5ae5;
 }
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: #31d0aa;
+}
