@@ -833,9 +833,10 @@ p {
   background-color: #31d0aa;
 }
 
-.social-icon,
+.social-icon {
+  fill: var(--color-bg-light);
+}
+
 .footer-socials-icon {
-  fill: var(
-    --color-bg-light
-  ); /* автоперевірка: css-змінна зі значенням #f4f4fd */
+  fill: var(--color-bg-light);
 }
