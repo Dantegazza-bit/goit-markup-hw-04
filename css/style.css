@@ -833,11 +833,6 @@ p {
   background-color: #31d0aa;
 }
 
-svg.social-icon,
-svg.footer-socials-icon {
-  fill: var(--color-bg-light);
-}
-
 .social-icon,
 .footer-socials-icon {
   fill: var(
