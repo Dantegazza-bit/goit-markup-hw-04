@@ -755,12 +755,6 @@ p {
   background-color: var(--color-accent);
 }
 
-.footer-socials-icon {
-  fill: var(
-    --color-bg-light
-  ); /* автоперевірка: використано css-змінну для fill */
-}
-
 .footer-container {
   display: flex;
   align-items: baseline;
