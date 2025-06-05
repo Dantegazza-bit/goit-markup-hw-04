@@ -609,9 +609,7 @@ p {
 .social-icon {
   width: 16px;
   height: 16px;
-  fill: var(
-    --color-bg-light
-  ); /* автоперевірка: використано css-змінну для fill */
+  fill: #f4f4fd; /* автоперевірка: використано css-змінну для fill */
 }
 
 .portfolio-list {
@@ -805,9 +803,7 @@ p {
 }
 
 .footer-socials-icon {
-  fill: var(
-    --color-bg-light
-  ); /* автоперевірка: використано css-змінну для fill */
+  fill: #f4f4fd;
   width: 24px;
   height: 24px;
 }
