@@ -278,7 +278,7 @@ p {
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-  fill: var(--color-white);
+  fill: #f4f4fd;
 }
 
 /* === Portfolio === */
